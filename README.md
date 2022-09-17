@@ -2,7 +2,7 @@
 # Electron ADB Starter
 
 ## Overview
-This project can be used as the starting point for a collecting common adb commands and scripts and making them conveniently accessible via a UI. 
+This project can be used as the starting point for a collecting common [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) commands and scripts and making them conveniently accessible via a UI. 
 
 Based on the [Electron React Boilerplate](https://github.com/electron-react-boilerplate) repository.
 
@@ -13,7 +13,7 @@ Based on the [Electron React Boilerplate](https://github.com/electron-react-boil
 * [ElectronJs](https://www.electronjs.org/) and [electron-builder](https://www.electron.build/) to build and package the app as a standalone executable
 
 ## Adding a new ADB command
-For an example of adding a new adb command to the starter, see this [example commit](69f8515b8d57064e11dd0dae06fdb6cdbc556dc4).
+For an example of adding a new adb command to the starter, see this [example commit](https://github.com/erikbonner/electron-adb/commit/69f8515b8d57064e11dd0dae06fdb6cdbc556dc4).
 
 
 ## License
