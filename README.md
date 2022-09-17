@@ -15,6 +15,11 @@ Based on the [Electron React Boilerplate](https://github.com/electron-react-boil
 ## Adding a new ADB command
 For an example of adding a new adb command to the starter, see this [example commit](https://github.com/erikbonner/electron-adb/commit/69f8515b8d57064e11dd0dae06fdb6cdbc556dc4).
 
+## Building a and running an executable
+`npm run package` will build a distributable binary for your operating system. See the [electron-builder](https://www.electron.build/) docs for additional parameters for customizing the build.
+
+Be sure that adb is in your system path and connected to a device before you start the app.
+
 
 ## License
 All changes to the [Electron React Boilerplate](https://github.com/electron-react-boilerplate) project have been made under the MIT license. 
