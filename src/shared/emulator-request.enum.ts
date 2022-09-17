@@ -1,3 +1,4 @@
 export enum EmulatorRequest {
-  ListPackages = 'ListPackages'
+  ListPackages = 'ListPackages',
+  Restart = 'Restart'
 }

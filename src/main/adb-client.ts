@@ -55,4 +55,12 @@ export class AdbClient {
   async getPackages(): Promise<string[]> {
     return await runCatching("getPackages()", async() => await this.device.getPackages())
   }
+
+  async root(): Promise<void> {
+    try {
+      return await runCatching("root()", async() => await this.device.root())
+    } catch(e) {
+      console.warn('Error calling root: ', e)
+    }
+  }
 }

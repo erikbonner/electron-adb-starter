@@ -8,6 +8,11 @@ const Hello = () => {
 
   const [packages, setPackages] = useState<string[]>([])
 
+  async function doRestart() {
+    console.log('doRestart()')
+    window.electron.restart()
+  }
+
   async function doAdbListPackages() {
     const result = await window.electron.listPackages()
     console.log(result)
@@ -16,8 +21,10 @@ const Hello = () => {
 
   return (
     <div className="container">
-      <Button onClick={doAdbListPackages} variant="contained">List installed apps</Button>
-
+      <Stack direction="row" spacing={2}>
+        <Button onClick={doAdbListPackages} variant="contained">List installed apps</Button>
+        <Button onClick={doRestart} variant="contained">Restart</Button>
+      </Stack>
       { packages.length > 0 &&
         <List sx={{
           maxHeight: "50%",

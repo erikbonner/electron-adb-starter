@@ -19,5 +19,7 @@ function sendWithResponse<T>(channel: Channels, ...args: unknown[]): Promise<T> 
 contextBridge.exposeInMainWorld('electron', {
   listPackages(): Promise<string[]> {
     return sendWithResponse<string[]>('emulator-requests', EmulatorRequest.ListPackages)
-  }
+  },
+  restart() { ipcRenderer.send('emulator-requests', EmulatorRequest.Restart)}
+
 });
